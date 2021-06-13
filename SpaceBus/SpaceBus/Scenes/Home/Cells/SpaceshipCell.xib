@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpaceshipCell" id="gTV-IL-0wX" customClass="SpaceshipCell" customModule="SpaceBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBv-5o-Qpd">
+                        <rect key="frame" x="0.0" y="44" width="306" height="222"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="m3l-2c-SgE">
+                                <rect key="frame" x="16" y="16" width="274" height="190"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZ6-St-3xu">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="49"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-Ty-9Dh">
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="49"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-sV-klj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="244" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-rL-cG9">
+                                                        <rect key="frame" x="0.0" y="28.5" width="244" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4L-Ob-dwP">
+                                                <rect key="frame" x="244" y="0.0" width="30" height="49"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="qtC-EK-Avm"/>
+                                                </constraints>
+                                                <state key="normal" image="emptyStar"/>
+                                                <connections>
+                                                    <action selector="starPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Dpi-R4-kE3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qug-8r-rOY">
+                                        <rect key="frame" x="0.0" y="81" width="274" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlT-my-O1v">
+                                        <rect key="frame" x="0.0" y="150" width="274" height="40"/>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.062745098040000002" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hFl-I1-HLa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Travel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="travelPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xrd-0V-5FX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="m3l-2c-SgE" secondAttribute="bottom" constant="16" id="2jA-T0-rI1"/>
+                            <constraint firstItem="m3l-2c-SgE" firstAttribute="leading" secondItem="NBv-5o-Qpd" secondAttribute="leading" constant="16" id="OX0-xm-Wvv"/>
+                            <constraint firstAttribute="trailing" secondItem="m3l-2c-SgE" secondAttribute="trailing" constant="16" id="Xza-3E-tuu"/>
+                            <constraint firstItem="m3l-2c-SgE" firstAttribute="top" secondItem="NBv-5o-Qpd" secondAttribute="top" constant="16" id="Zra-yT-MAZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="NBv-5o-Qpd" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="B3k-Gf-q2V"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="NBv-5o-Qpd" secondAttribute="leading" id="Sip-kh-OyE"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="NBv-5o-Qpd" secondAttribute="trailing" constant="16" id="WIb-fg-XsK"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="NBv-5o-Qpd" secondAttribute="top" id="ekR-6H-ZaJ"/>
+            </constraints>
+            <size key="customSize" width="322" height="266"/>
+            <connections>
+                <outlet property="detailLabel" destination="Ed2-sV-klj" id="zI9-4G-Y2o"/>
+                <outlet property="favoriteButton" destination="Z4L-Ob-dwP" id="JYF-kz-eaU"/>
+                <outlet property="spaceshipTitleLabel" destination="Qug-8r-rOY" id="Pd8-Lo-vdM"/>
+                <outlet property="subtitleLabel" destination="MdF-rL-cG9" id="tgp-13-EZV"/>
+                <outlet property="travelButton" destination="PlT-my-O1v" id="Z0R-yN-SEL"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="emptyStar" width="21" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
